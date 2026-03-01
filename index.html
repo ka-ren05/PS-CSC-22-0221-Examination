@@ -19,6 +19,19 @@
       -webkit-user-drag: none;
       touch-action: none;
     }
+    .controls-hint {
+    position: fixed;
+    left: 12px;
+    bottom: 12px;
+    z-index: 20;
+    padding: 8px 10px;
+    font: 12px/1.35 Arial, sans-serif;
+    color: #e8edf3;
+    background: rgba(12, 16, 22, 0.72);
+    border: 1px solid rgba(170, 184, 198, 0.35);
+    border-radius: 6px;
+    pointer-events: none;
+  }
   </style>
   <script>
     // Camera vertical movement using Q/E keys.
@@ -133,6 +146,7 @@
   </script>
 </head>
 <body>
+  <div class="controls-hint">Move: W/A/S/D | Look: Mouse drag | Up/Down: Q / E</div>
   <a-scene background="color: #a5b1b5">
     <!-- Textures / image assets -->
     <a-assets>
@@ -948,4 +962,5 @@
   </a-scene>
 </body>
 </html>
+
 
